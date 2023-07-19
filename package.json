@@ -3,5 +3,16 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "Evan Fleet",
-  "scripts": {}
+  "scripts": {
+    "dev": "tsx watch src/index.ts | pino-pretty"
+  },
+  "dependencies": {
+    "fastify": "^4.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "pino-pretty": "^10.0.1",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  }
 }
