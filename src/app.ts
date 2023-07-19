@@ -1,11 +1,11 @@
 import fastify from "fastify";
 
+import authRoutes from "./routes/auth.routes";
+
 const app = fastify({
   logger: true,
 });
 
-app.get("/", async (request, reply) => {
-  return { hello: "world" };
-});
+app.register(authRoutes, { prefix: "/auth" });
 
 export default app;
